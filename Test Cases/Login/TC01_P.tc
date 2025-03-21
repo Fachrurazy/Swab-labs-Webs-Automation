@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive case - Login use valid credential</description>
+   <name>TC01_P</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>51a181a9-278a-4cb6-b7f6-63791bc8800c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative case : user failed login without input username</description>
+   <name>TC02_Login_N</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9f73a8c1-e0dc-459d-b13a-3067839408db</testCaseGuid>
+</TestCaseEntity>

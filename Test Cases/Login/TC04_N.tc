@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative case - login with invalid credential</description>
+   <name>TC04_N</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b99ffdf4-2dce-4094-a54b-d642c391f51c</testCaseGuid>
+</TestCaseEntity>

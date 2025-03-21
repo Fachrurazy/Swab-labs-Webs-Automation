@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative case - username not filled</description>
+   <name>TC05_N</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2c8d4bb0-5e09-4ce2-ab42-dd1096a44289</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive case: user success checkout product</description>
+   <name>TC03_Checkout_P</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>faacec75-980c-47b3-9f93-0ac32ff18559</testCaseGuid>
+</TestCaseEntity>

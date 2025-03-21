@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive case: user success login</description>
+   <name>TC01_Login_P</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ae4c957-0711-45f0-834f-8ea7b0f601ce</testCaseGuid>
+</TestCaseEntity>

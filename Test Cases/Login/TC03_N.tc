@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative case - password not filled</description>
+   <name>TC03_N</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0ed910f7-536f-46eb-a318-59b7ef6d8774</testCaseGuid>
+</TestCaseEntity>
