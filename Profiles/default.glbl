@@ -9,4 +9,9 @@
       <initValue>'https://www.saucedemo.com/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>path test Data Login</description>
+      <initValue>'Data Files/Testdata_login'</initValue>
+      <name>testDataLogin</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

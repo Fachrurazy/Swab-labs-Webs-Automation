@@ -23,23 +23,16 @@ WebUI.openBrowser(GlobalVariable.url, FailureHandling.STOP_ON_FAILURE)
 // Maximizewindow
 WebUI.maximizeWindow()
 
-// Variable path Data File
-// Path Test Data Login
-String testDataLogin = "Data Files/Testdata_login"
-
-// Function untuk find test data
-def getTestDataValue(String filepath, int row, int coloumn) {
-	findTestData(filepath).getValue(row, coloumn)
-}
-
 // Memanggil custom keyword package login features - keyword login - method login process
 CustomKeywords.'loginFeatures.login.loginProcess'(
-	getTestDataValue(testDataLogin, 1, 1), 
-	getTestDataValue(testDataLogin, 2, 1))
+	CustomKeywords.'loginFeatures.login.getTestDataValue'(GlobalVariable.testDataLogin, 1, 1),
+	CustomKeywords.'loginFeatures.login.getTestDataValue'(GlobalVariable.testDataLogin, 2, 1))
 
 // Memanggil custom keyword package login features - keyword login - method verify login success 
-CustomKeywords.'loginFeatures.login.verifyLoginSuccess'()
+CustomKeywords.'loginFeatures.login.verifyLoginSuccess'(
+	CustomKeywords.'loginFeatures.login.getTestDataValue'(GlobalVariable.testDataLogin, 4, 1))
 
+// Close Browser
 WebUI.closeBrowser()
 
 

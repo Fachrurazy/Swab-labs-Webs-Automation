@@ -17,3 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Openbrowser dan get link url menggunakan globalvariable
+WebUI.openBrowser(GlobalVariable.url, FailureHandling.STOP_ON_FAILURE)
+
+// Maximizewindow
+WebUI.maximizeWindow(FailureHandling.OPTIONAL)
+
+// Memanggil custom keyword package login features - keyword login - method login process
+CustomKeywords.'loginFeatures.login.loginProcess'(
+	CustomKeywords.'loginFeatures.login.getTestDataValue'(GlobalVariable.testDataLogin, 1, 1),
+	 '')
+
+// Object error message Username is required
+TestObject error_msg = findTestObject('Object Repository/Login_page/Page_Swag Labs/error_message username or password invalid')
+
+// Test Object element
+TestObject icon_errorUsername = findTestObject('Object Repository/Login_page/Page_Swag Labs/icon_error Username')
+
+TestObject icon_errorPassword = findTestObject('Object Repository/Login_page/Page_Swag Labs/icon_error Password')
+
+WebUI.closeBrowser()
+

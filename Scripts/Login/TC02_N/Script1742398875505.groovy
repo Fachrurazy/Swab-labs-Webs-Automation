@@ -27,27 +27,26 @@ WebUI.maximizeWindow(FailureHandling.OPTIONAL)
 // Memanggil custom keyword package login features - keyword login - method login process
 CustomKeywords.'loginFeatures.login.loginProcess'('', '')
 
-// Object error message Username is required
+// TestObject element error message Username is required
 TestObject error_msg = findTestObject('Object Repository/Login_page/Page_Swag Labs/error_message username or password invalid')
 
-// Object 
+// TestObject element icon error input text Username
 TestObject icon_errorUsername = findTestObject('Object Repository/Login_page/Page_Swag Labs/icon_error Username')
 
+// TestObject element icon error input text Username
 TestObject icon_errorPassword = findTestObject('Object Repository/Login_page/Page_Swag Labs/icon_error Password')
 
-String testDataLogin = 'Data Files/Testdata_login'
+CustomKeywords.'loginFeatures.login.isElementVisible'(error_msg, "Error Message")
 
-WebUI.verifyElementVisible(error_msg, FailureHandling.CONTINUE_ON_FAILURE)
+CustomKeywords.'loginFeatures.login.isElementVisible'(icon_errorUsername, "Icon Error Username")
 
-WebUI.verifyElementVisible(icon_errorUsername, FailureHandling.CONTINUE_ON_FAILURE)
+CustomKeywords.'loginFeatures.login.isElementVisible'(icon_errorPassword, "Icon Error Password")
 
-WebUI.verifyElementVisible(icon_errorPassword, FailureHandling.CONTINUE_ON_FAILURE)
+CustomKeywords.'loginFeatures.login.isElementTextMatch'(error_msg, 
+	CustomKeywords.'loginFeatures.login.getTestDataValue'(GlobalVariable.testDataLogin, 3, 1))
 
-WebUI.verifyElementText(error_msg, getTestDataValue(testDataLogin, 3, 1), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 
-def getTestDataValue(String filepath, int row, int coloumn) {
-    findTestData(filepath).getValue(row, coloumn)
-}
+
 
